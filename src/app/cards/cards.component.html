@@ -1,0 +1,16 @@
+<div class="cards-container">
+    <div class="heading">We're driven by our values</div>
+    <div class="card-boxes">
+        <ng-container *ngFor="let item of cardList; index as i">
+            <div class="card border-0 card-class rounded rounded-4" [ngStyle]="getStyles(item)" >
+                <div class="card-body p-4">
+                    <h5 class="title">{{item.title}}</h5>
+                    <p class="text">
+                        {{item.description}}
+                    </p>
+                </div>
+                <img class="rounded-bottom-4 bottom-0 card-img" [src]="'../../assets/' + item.image + '.png'" [alt]="'Img' + (i + 1)">
+            </div>
+        </ng-container>
+    </div>
+</div>

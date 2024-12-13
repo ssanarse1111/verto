@@ -1,0 +1,8 @@
+<app-cards *ngIf="activeScreen === 1"></app-cards>
+<app-banner *ngIf="activeScreen === 2"></app-banner>
+<div class="d-flex align-items-center justify-content-center p-2 position-absolute start-0 bottom-0">
+  <div class="d-flex gap-2">
+    <button [ngClass]="'btn btn-primary' + (activeScreen === 2 ? 'active' : '')" type="button" (click)="handleScreenChange(1)">Screen 1</button>
+    <button [ngClass]="'btn btn-primary' + (activeScreen === 1 ? 'active' : '')" type="button" (click)="handleScreenChange(2)">Screen 2</button>
+  </div>
+</div>

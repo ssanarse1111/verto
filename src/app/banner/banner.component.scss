@@ -1,0 +1,91 @@
+.banner-container {
+    background-color: #232E3A;
+    display: flex;
+    .info-container {
+        width: 60%;
+        padding: 70px 0 70px 70px;
+        .info-head {
+            width: 70%;
+            .title {
+                color: #FFFFFF;
+                font-size: 32px;
+                font-weight: 700;
+                margin-bottom: 30px;
+            }
+            .sub-title {
+                color: #FFFFFF;
+                font-size: 14px;
+                font-weight: 100;
+                margin-bottom: 30px;
+            }
+        }
+        .info-list-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+            max-height: 241px;
+            overflow: auto;
+            .info-list-box {
+                width: 200px;
+                .heading {
+                    font-size: 32px;
+                    font-weight: 700;
+                    color: #FFFFFF;
+                    border-left: 1px solid #30C2E1;
+                    padding: 0px 10px;
+                    margin-bottom: 12px;
+                }
+                .desc {
+                    color: #FFFFFF;
+                    font-size: 13px;
+                    font-weight: 100;
+                    padding-left: 12px;
+                }
+            }
+        }
+    }
+
+    .global-img-container {
+        top: 0;
+        right: 0;
+        width: 50%;
+        .globe-img {
+            height: 100%;
+            width: 100%;
+        }
+        .arrow1 {
+            position: absolute;
+            top: 20%;
+            left: 15%;
+            height: 50%;
+            width: 25%;
+        }
+        .arrow2 {
+            position: absolute;
+            top: 40%;
+            left: 49%;
+            height: 50%;
+            width: 25%;
+        }
+        .ellipse1 {
+            position: absolute;
+            top: 68.5%;
+            left: 39%;
+            height: 15px;
+            width: 15px;
+        }
+        .ellipse2 {
+            position: absolute;
+            top: 39.5%;
+            left: 73%;
+            height: 15px;
+            width: 15px;
+        }
+    }
+
+    // @media (max-width: 1310px) {
+    //     .global-img-container {
+    //         width: 70%;
+    //     }
+    // }
+}
